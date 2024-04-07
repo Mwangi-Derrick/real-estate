@@ -25,3 +25,21 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7dd3fc;
+  border-radius: 30px;
+}
+
+/* For Mozilla Firefox */
+/* Please note that Firefox does not support styling the scrollbar thumb directly. You can use pseudo-elements to style the scrollbar instead. */
+/* This is a simplified example for demonstration purposes */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7dd3fc transparent;
+}
